@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# connect server using ssh keys
+ssh -i ~/.ssh/school
+
