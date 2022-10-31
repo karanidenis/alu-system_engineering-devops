@@ -1,0 +1,1 @@
+more knowledge on webservers and applying skills by writing bash scripts that publish websites on our server. 
