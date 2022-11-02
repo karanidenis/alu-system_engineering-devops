@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #transfering files from a local client to a server.
 
 if [ "$4" ] ; then
