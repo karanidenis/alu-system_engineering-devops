@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
-# script to install nginx
+#redirecting it to a permanent page
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
 sudo echo "Holberton School" > /var/www/html/index.html
+sudo sed -i "/listen 80 default_server;/a rewrite ^/redirect_me https://onepiece.fandom.com/wiki/One_Piece_Wiki permanent;" /etc/nginx/sites-enabled/default
 sudo systemctl start nginx.service
