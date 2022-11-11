@@ -2,7 +2,7 @@
 # This script install and configure haproxy
 sudo apt update -y
 sudo apt install haproxy -y
-echo 'ENABLED=1' | sudo tee -a /etc/default/haproxy
+echo 'ENABLED=1' | sudo tee /etc/default/haproxy
 printf %s 'backend web-backend
         balance roundrobin
         server 4815-web-01 54.146.239.63 check port 80
@@ -11,5 +11,5 @@ frontend http
         bind *:80
         mode http
         default_backend web-backend
-' | sudo tee -a /etc/haproxy/haproxy.cfg
+' | sudo tee /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
