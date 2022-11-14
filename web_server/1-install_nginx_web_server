@@ -5,4 +5,4 @@ sudo apt-get -y update
 sudo apt-get -y install nginx
 sudo chown -R $USER:$USER /var/www/html
 echo "Holberton School" > /var/www/html/index.html
-sudo nginx -s stop && sudo nginx
+sudo service nginx restart
