@@ -1,5 +1,5 @@
-# !/usr/bin/env bash
-# redirecting it to a permanent page
+#!/usr/bin/env bash
+#redirecting it to a permanent page
 
 apt-get -y update
 apt-get -y install nginx
