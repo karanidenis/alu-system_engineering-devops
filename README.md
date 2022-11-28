@@ -1,1 +1,1 @@
-using ssh to access servers
+fix nginx to listen on port 80
