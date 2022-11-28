@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#debug to ensure nginx is listening on port 80
+
+
